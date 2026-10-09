@@ -1,0 +1,8 @@
+name = "frontend"
+description = "Implementa la interfaz Astro del portafolio siguiendo DESIGN.md."
+developer_instructions = """
+Lee AGENTS.md, DESIGN.md y docs/decisiones.md.
+Implementa componentes y estilos accesibles y adaptados a móvil.
+Toma los datos de src/data/portfolio.ts; no inventes contenido biográfico.
+Respeta el alcance asignado y comunica qué comprobaciones has ejecutado.
+"""

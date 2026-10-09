@@ -1,0 +1,37 @@
+---
+import '../styles/global.css';
+import { profile } from '../data/portfolio';
+interface Props { title?: string; description?: string; }
+const { title = `${profile.publicName} — ${profile.role}`, description = profile.description } = Astro.props;
+---
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#f6f3f1" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <header class="site-header wrap">
+      <a class="wordmark" href="/" aria-label={`${profile.publicName}, inicio`}><span class="mark" aria-hidden="true">d.</span>{profile.publicName}<span class="wordmark-note"> / PORTAFOLIO</span></a>
+      <nav aria-label="Navegación principal">
+        <a href="/#proyectos">Proyectos</a>
+        <a href="/#aprendizaje">Aprendizaje</a>
+        <a href="/#sobre-mi">Sobre mí</a>
+      </nav>
+      <div class="header-actions">
+        <a class="button ghost" href={profile.cv} target="_blank" rel="noopener noreferrer">Mi CV <span aria-hidden="true">↗</span><span class="sr-only"> (PDF, nueva pestaña)</span></a>
+        <a class="button dark" href="/#contacto">Contáctame <span aria-hidden="true">↗</span></a>
+      </div>
+    </header>
+    <main id="contenido"><slot /></main>
+    <footer class="site-footer wrap"><a href="/" class="footer-name">{profile.publicName}</a><span>Aprender. Documentar. Construir.</span><a href={profile.github} target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span><span class="sr-only"> (nueva pestaña)</span></a></footer>
+  </body>
+</html>

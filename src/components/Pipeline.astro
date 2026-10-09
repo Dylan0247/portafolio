@@ -1,0 +1,12 @@
+---
+interface Props { compact?: boolean; }
+const { compact = false } = Astro.props;
+---
+<div class:list={['pipeline', { compact }]} role="img" aria-label="Obsidian conserva las notas, n8n coordina el flujo, Qwen3 apoya con contexto y Codex revisa las fuentes.">
+  <div class="pipeline-glow" aria-hidden="true"></div>
+  <div class="pipeline-top"><span class="node"><span aria-hidden="true">◇</span> Obsidian</span><span class="node"><span aria-hidden="true">⌘</span> Codex</span></div>
+  <div class="pipeline-lines" aria-hidden="true"><svg viewBox="0 0 400 100" preserveAspectRatio="none"><path d="M75 0 C75 65 200 25 200 100 M325 0 C325 65 200 25 200 100" /></svg></div>
+  <div class="pipeline-hub"><span aria-hidden="true">✳</span><span>Cerebro</span><small>CONTEXTO COMPARTIDO</small></div>
+  <div class="pipeline-lines lower" aria-hidden="true"><svg viewBox="0 0 400 100" preserveAspectRatio="none"><path d="M200 0 C200 75 75 35 75 100 M200 0 C200 75 325 35 325 100" /></svg></div>
+  <div class="pipeline-bottom"><span class="node"><span aria-hidden="true">⤳</span> n8n</span><span class="node"><span aria-hidden="true">◎</span> Qwen3 / Ollama</span></div>
+</div>

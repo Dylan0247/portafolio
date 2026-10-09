@@ -1,0 +1,42 @@
+node_modules/
+dist/
+.astro/
+.vercel/
+.env
+.env.*
+!.env.example
+outputs/
+*.log
+.DS_Store
+Thumbs.db
+
+# Memoria de trabajo e informes locales: conservar sin publicar.
+docs/perfil.md
+docs/comprobaciones.md
+
+# Credenciales, claves privadas y configuración local.
+*.pem
+*.key
+id_rsa
+id_ed25519
+credentials.json
+service-account.json
+secrets.json
+.npmrc
+.pypirc
+.netrc
+
+# Entornos, cachés y copias locales.
+.venv/
+venv/
+__pycache__/
+*.pyc
+.cache/
+.vscode/
+.idea/
+*.tmp
+*.bak
+*.dump
+*.sqlite
+*.sqlite3
+*.db

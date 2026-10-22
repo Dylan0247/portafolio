@@ -52,6 +52,7 @@ import { profile, learning, cerebro } from '../data/portfolio';
     <address class="contact-links">
       <a href={`mailto:${profile.email}`}><span class="contact-label">Correo</span><span class="contact-value">{profile.email}</span><span aria-hidden="true">↗</span></a>
       <a href={profile.github} target="_blank" rel="noopener noreferrer"><span class="contact-label">GitHub</span><span class="contact-value">github.com/Dylan0247</span><span aria-hidden="true">↗</span><span class="sr-only"> (nueva pestaña)</span></a>
+      {profile.linkedin && <a href={profile.linkedin} target="_blank" rel="noopener noreferrer"><span class="contact-label">LinkedIn</span><span class="contact-value">Ver perfil profesional</span><span aria-hidden="true">↗</span><span class="sr-only"> (nueva pestaña)</span></a>}
       <a href={profile.phoneHref}><span class="contact-label">Teléfono</span><span class="contact-value">{profile.phone}</span><span aria-hidden="true">↗</span></a>
     </address>
   </section>

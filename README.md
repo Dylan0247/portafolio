@@ -135,7 +135,7 @@ Las versiones anteriores corresponden al lockfile actual.
 - Para cambiar el diseño, lee [DESIGN.md](DESIGN.md) y las
   [decisiones de implementación](docs/decisiones.md) antes de editar `global.css`.
 
-El campo `linkedin` está vacío y actualmente no se muestra en las plantillas.
+El campo `profile.linkedin` define la tarjeta de LinkedIn en contacto; si está vacío, se oculta.
 El texto visible del enlace de GitHub en contacto está escrito en `index.astro`;
 si cambias de cuenta, actualízalo junto con `profile.github`.
 

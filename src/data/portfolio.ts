@@ -6,14 +6,14 @@ export interface LearningItem {
   topics: string[];
 }
 
-// Cambia solo por datos que quieras publicar. Las cadenas vacías no generan enlaces.
+// Cambia solo por datos que quieras publicar. LinkedIn vacío oculta su tarjeta.
 export const profile = {
   publicName: "Dylan0247",
   role: "DevOps en formación",
   description:
     "Un portafolio de aprendizaje, automatización y sistemas conectados. Preparación en AWS y un camino hacia DevOps.",
   github: "https://github.com/Dylan0247",
-  linkedin: "",
+  linkedin: "https://www.linkedin.com/in/dylan-solarte-londo%C3%B1o-76887a337",
   email: "dylansolarte8@gmail.com",
   phone: "+34 634 488 484",
   phoneHref: "tel:+34634488484",
